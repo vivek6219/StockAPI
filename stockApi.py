@@ -1,5 +1,6 @@
+from scrape import Scrape
 import yfinance as yf
-from Sectors import Sectors
+# from sectors import Sectors
 from requests import Session
 from requests_cache import CacheMixin, SQLiteCache
 from requests_ratelimiter import LimiterMixin, MemoryQueueBucket
@@ -23,10 +24,10 @@ session = CachedLimiterSession(
 
 
 #data from specific sectors
-tech = yf.Sector('technology')
+# tech = yf.Sector('technology')
 
 #data from specific industries
-software = yf.Industry('software-infrastructure')
+# software = yf.Industry('software-infrastructure')
 
 # msft = yf.Ticker("MSFT")
 # spy = yf.Ticker('SPY')
